@@ -8,4 +8,7 @@ JSON
   jsonlint.com is where you can go to check your source code.
   This is also called the object literal notation.
 control flow
+Tip
+  You should never use ==, always use ===.
+  One is loose equality, the other is strict equality.
 
