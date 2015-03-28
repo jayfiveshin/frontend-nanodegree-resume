@@ -4,13 +4,22 @@ var work = {
       "employer" : "Intelex Technologies",
       "title" : "Project Consultant",
       "location" : "Toronto",
-      "dates" : "March 2013 - Current"
+      "dates" : "March 2013 - Current",
+      "description" : "I implement software for our company's clients."
     },
     {
       "employer" : "Big Bang Technologies",
       "title" : "Junior Web Developer",
       "location" : "Toronto",
-      "dates" : "September 2012 - December 2012"
+      "dates" : "September 2012 - December 2012",
+      "description" : "I developed front-end interfaces for rails application."
+    },
+    {
+      "employer" : "CGI Group",
+      "title" : "Project Coordinator Officer",
+      "location" : "Markham",
+      "dates" : "May 2012 - August 2012",
+      "description" : "I maintained project budget and administration work."
     }
   ]
 };
@@ -68,46 +77,52 @@ var edu = {
 };
 
 // header
-// var formattedName = HTMLheaderName.replace("%data%", bio.name);
-// var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
 // contacts
-// var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
-// var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-// var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
 // other
-// var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
-// var formattedMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
-// var formattedSkills = HTMLskills.replace("%data%", bio.skills);
-
-// work
-// var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.employer);
-// var formattedPosition = HTMLworkTitle.replace("%data%", work["position"]);
+var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+var formattedMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 
 // edu
-// var formattedEduName = HTMLschoolName.replace("%data%", edu.name);
-// var formattedEduDegree = HTMLschoolDegree.replace("%data%", edu.degree);
+var formattedEduName = HTMLschoolName.replace("%data%", edu.name);
+var formattedEduDegree = HTMLschoolDegree.replace("%data%", edu.degree);
 
 // header
-// $("#header").append(formattedName);
-// $("#header").append(formattedRole);
+$("#header").append(formattedName);
+$("#header").append(formattedRole);
 
 // contacts
-// $("#topContacts").append(formattedMobile);
-// $("#topContacts").append(formattedEmail);
-// $("#topContacts").append(formattedTwitter);
+$("#topContacts").append(formattedMobile);
+$("#topContacts").append(formattedEmail);
+$("#topContacts").append(formattedTwitter);
 
-// other
-// $("#header").append(formattedPic);
-// $("#header").append(formattedMsg);
-// $("#header").append(HTMLskillsStart);
-// $("#header").append(formattedSkills);
+$("#header").append(formattedPic);
+$("#header").append(formattedMsg);
 
-// work
-// $("#workExperience").append(HTMLworkStart);
-// $(".work-entry").append(formattedWorkEmployer);
-// $(".work-entry").append(formattedPosition);
+// skills
+if(bio.skills.length > 0) {
+  $("#header").append(HTMLskillsStart);
+  for (skill in bio.skills) {
+    $("#skills").append(HTMLskills.replace("%data%", bio.skills[skill]));
+  }
+}
+
+for(job in work.jobs) {
+  $("#workExperience").append(HTMLworkStart);
+  var formattedEmployer =
+    HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+  var formattedTitle =
+    HTMLworkTitle.replace("%data%", work.jobs[job].title);
+  var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+  $(".work-entry:last").append(formattedEmployerTitle);
+}
 
 // edu
 // $("#education").append(HTMLschoolStart);
