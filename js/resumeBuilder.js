@@ -145,10 +145,11 @@ project.display = function () {
 $("#main").append(internationalizeButton);
 
 function inName(str_in) {
-  // console.log(str_in);
-  var str_array = str_in.split(" ");
-  var str_out = str_array[0][0].toUpperCase() + str_array[0].slice(1) + " " +
-    str_array[1].toUpperCase();
+  var str_array, str_out;
+  str_array = str_in.split(" ");
+  str_array[0] = str_array[0].slice(0,1).toUpperCase() + str_array[0].slice(1);
+  str_array[1] = str_array[1].toUpperCase();
+  str_out = str_array[0] + " " + str_array[1];
   return str_out;
 }
 
