@@ -112,7 +112,7 @@ if(bio.skills.length > 0) {
   }
 }
 
-function displayWork() {
+work.display = function() {
   for(job in work.jobs) {
     var formattedEmployer       = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
     var formattedTitle          = HTMLworkTitle.replace("%data%", work.jobs[job].title);
@@ -128,7 +128,19 @@ function displayWork() {
   }
 }
 
-displayWork();
+project.display = function () {
+  for (p in project.projects) {
+    var formattedTitle = HTMLprojectTitle.replace("%data%", project.projects[p].title);
+    var formattedDates = HTMLprojectDates.replace("%data%", project.projects[p].dates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%", project.projects[p].description);
+    var formattedImage = HTMLprojectImage.replace("%data%", project.projects[p].images);
+    $("#projects").append(HTMLprojectStart);
+    $(".project-entry:last").append(formattedTitle);
+    $(".project-entry:last").append(formattedDates);
+    $(".project-entry:last").append(formattedDescription);
+    $(".project-entry:last").append(formattedImage);
+  }
+}
 
 $("#main").append(internationalizeButton);
 
@@ -140,6 +152,5 @@ function inName(str_in) {
   return str_out;
 }
 
-project.display = function () {
-  console.log("It is working!");
-}
+work.display();
+project.display();
