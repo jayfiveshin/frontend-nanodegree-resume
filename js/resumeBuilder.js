@@ -28,9 +28,15 @@ var project = {
   "projects" : [
     {
       "title" : "Portfolio Site",
-      "dates" : "February 2015 - March 2015",
-      "description" : "Made my own portfolio site using the BootStrap framework",
-      "images" : ["images/fry.jpg", "me.jpg"]
+      "dates" : "February 2015",
+      "description" : "Made my own portfolio site using the BootStrap framework.",
+      "images" : ["images/portfolio-site.png"]
+    },
+    {
+      "title" : "Interactive Resume",
+      "dates" : "March 2015",
+      "description" : "Made my own interactive resume using JavaScript.",
+      "images" : ["images/interactive-resume.png"]
     }
   ]
 };
@@ -47,8 +53,12 @@ var bio = {
     "location" : "Mississauga, ON Canada"
   },
   "skills" : [
+    "software implementation",
+    "consulting",
+    "requirements gathering",
+    "project management",
     "programming",
-    "awesome",
+    "presentation",
     "communication"
   ],
   "biopic" : "images/me.jpg"
