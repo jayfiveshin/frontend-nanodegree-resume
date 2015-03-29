@@ -13,6 +13,15 @@
   padding-right: 5%;
 }
 
+/*
+Applying this will make things more easier to read, but it will end up creating
+a white space on both left and right side of the page.
+*/
+/*#main {
+  max-width: 1000px;
+  margin: 0 auto;
+}*/
+
 h1 {
   font-size: 40px;
   color: #F5A623;
