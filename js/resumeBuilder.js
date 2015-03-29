@@ -119,3 +119,17 @@ function displayWork() {
 }
 
 displayWork();
+
+$("#main").append(internationalizeButton);
+
+function inName(str_in) {
+  // console.log(str_in);
+  var str_array = str_in.split(" ");
+  var str_out = str_array[0][0].toUpperCase() + str_array[0].slice(1) + " " +
+    str_array[1].toUpperCase();
+  return str_out;
+}
+
+project.display = function () {
+  console.log("It is working!");
+}
