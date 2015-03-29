@@ -11,4 +11,15 @@ control flow
 Tip
   You should never use ==, always use ===.
   One is loose equality, the other is strict equality.
+Functions
+  There are two ways to do this.
 
+  First way
+  var myFunc = function(param1, param2, ..., etc) {
+    // code goes there
+  }
+
+  Second way
+  function myFunc(param1, param2, ..., etc) {
+    // code goes here
+  }
