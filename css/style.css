@@ -95,6 +95,10 @@ a {
   line-height: 28px;
 }
 
+#role {
+  color: white;
+}
+
 #skillsH3 {
   color: #F5AE23;
   display: none;
