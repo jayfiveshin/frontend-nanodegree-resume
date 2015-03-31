@@ -22,11 +22,13 @@ One is loose equality, the other is strict equality.
 There are two ways to do this.
 
 __First way__
+
     var myFunc = function(param1, param2, ..., etc) {
       // code goes there
     }
 
 __Second way__
+
     function myFunc(param1, param2, ..., etc) {
       // code goes here
     }
