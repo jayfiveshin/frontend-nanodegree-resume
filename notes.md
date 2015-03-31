@@ -1,16 +1,19 @@
-# Notes
+# JavaScript Basic Notes
 
-## object syntax
+## Object Syntax
 
-### dot notation
-object.property
+__Dot Notation__
 
-### bracket notation
-object["property"]
+    object.property
+
+__Bracket Notation__
+
+    object["property"]
 
 ## JSON
+
 Linting is a way of using a software to check for syntax errors.
-jsonlint.com is where you can go to check your source code.
+www.jsonlint.com is where you can go to check your source code.
 This is also called the object literal notation.
 
 ## Control flow
@@ -18,6 +21,7 @@ This is also called the object literal notation.
 ### Tip
 You should never use ==, always use ===.
 One is loose equality, the other is strict equality.
+
 ### Functions
 There are two ways to do this.
 
