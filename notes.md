@@ -22,9 +22,9 @@ One is loose equality, the other is strict equality.
 There are two ways to do this.
 
 #### First way
-  var myFunc = function(param1, param2, ..., etc) {
-    // code goes there
-  }
+    var myFunc = function(param1, param2, ..., etc) {
+      // code goes there
+    }
 
 #### Second way
   function myFunc(param1, param2, ..., etc) {
