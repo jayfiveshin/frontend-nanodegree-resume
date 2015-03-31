@@ -21,12 +21,12 @@ One is loose equality, the other is strict equality.
 ### Functions
 There are two ways to do this.
 
-#### First way
+__First way__
     var myFunc = function(param1, param2, ..., etc) {
       // code goes there
     }
 
-#### Second way
-  function myFunc(param1, param2, ..., etc) {
-    // code goes here
-  }
+__Second way__
+    function myFunc(param1, param2, ..., etc) {
+      // code goes here
+    }
