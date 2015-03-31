@@ -1,9 +1,11 @@
-object syntax
-  dot notation
-    object.property
-  bracket notation
-    object["property"]
-JSON
+# Notes
+## object syntax
+### dot notation
+object.property
+### bracket notation
+object["property"]
+
+## JSON
   linting is a way of using a software to check for syntax errors.
   jsonlint.com is where you can go to check your source code.
   This is also called the object literal notation.
