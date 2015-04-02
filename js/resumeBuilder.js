@@ -45,7 +45,7 @@ var bio = {
   "name" : "Joonha Shin",
   "role" : "Web Developer",
   "welcomeMsg" : "Welcome to Joonha's resume.",
-  "contact" : {
+  "contacts" : {
     "mobile" : "647-889-1882",
     "email" : "shin.joonha@gmail.com",
     "github" : "https://github.com/jayfiveshin",
@@ -64,11 +64,11 @@ var bio = {
   "biopic" : "images/me.jpg"
 };
 
-var edu = {
+var education = {
   "schools" : [
     {
       "name" : "University of Waterloo",
-      "city" : "Waterloo",
+      "location" : "Waterloo",
       "degree": "Management Engineering",
       "majors" : ["Engineering"],
       "dates" : "September 2006 - April 2012",
@@ -97,9 +97,9 @@ $("#header").append(formattedPic);
 $("#header").append(formattedMsg);
 
 // contacts
-var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 $("#topContacts").append(formattedMobile);
 $("#topContacts").append(formattedEmail);
 $("#topContacts").append(formattedTwitter);
@@ -155,3 +155,5 @@ function inName(str_in) {
 
 work.display();
 project.display();
+
+$("#mapDiv").append(googleMap);
