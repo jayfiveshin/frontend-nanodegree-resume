@@ -3,21 +3,21 @@ var work = {
     {
       "employer" : "Intelex Technologies",
       "title" : "Project Consultant",
-      "location" : "Toronto",
+      "location" : "Toronto, ON",
       "dates" : "March 2013 - Current",
       "description" : "I implement software for our company's clients."
     },
     {
       "employer" : "Big Bang Technologies",
       "title" : "Junior Web Developer",
-      "location" : "Toronto",
+      "location" : "Toronto, ON",
       "dates" : "September 2012 - December 2012",
       "description" : "I developed front-end interfaces for rails application."
     },
     {
       "employer" : "CGI Group",
       "title" : "Project Coordinator Officer",
-      "location" : "Markham",
+      "location" : "Markham, ON",
       "dates" : "May 2012 - August 2012",
       "description" : "I maintained project budget and administration work."
     }
