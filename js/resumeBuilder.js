@@ -142,7 +142,7 @@ project.display = function () {
   }
 }
 
-$("#main").append(internationalizeButton);
+// $("#main").append(internationalizeButton);
 
 function inName(str_in) {
   var str_array, str_out;
