@@ -14,10 +14,10 @@ function getRelationship(x, y) {
   }
   if (x > y) {
     return ">";
-  } 
+  }
   if (x < y) {
     return "<";
-  } 
+  }
   if (x === y) {
     return "=";
   }
