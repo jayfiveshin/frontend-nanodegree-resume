@@ -1,5 +1,3 @@
-# JavaScript Basic Notes
-
 ## Object Syntax
 
 __Dot Notation__
